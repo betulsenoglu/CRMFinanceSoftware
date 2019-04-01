@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58AEA15F-043F-4A57-AFEF-C66E08C2E06F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CRMSporKulubu.WinUI</RootNamespace>
+    <AssemblyName>CRMSporKulubu.WinUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Deneme\AccountSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\AccountSettings.Designer.cs">
+      <DependentUpon>AccountSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\Calisanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\Calisanlar.Designer.cs">
+      <DependentUpon>Calisanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\FinansUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\FinansUI.Designer.cs">
+      <DependentUpon>FinansUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\Calisanİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\Calisanİslemleri.Designer.cs">
+      <DependentUpon>Calisanİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\FinansUIEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\FinansUIEkle.Designer.cs">
+      <DependentUpon>FinansUIEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\raporDeneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\raporDeneme.Designer.cs">
+      <DependentUpon>raporDeneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\RaporMaas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\RaporMaas.Designer.cs">
+      <DependentUpon>RaporMaas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\RaporTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\RaporTest.Designer.cs">
+      <DependentUpon>RaporTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\UrunEkleUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\UrunEkleUI.Designer.cs">
+      <DependentUpon>UrunEkleUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\UrunUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\UrunUI.Designer.cs">
+      <DependentUpon>UrunUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\Uyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\Uyeler.Designer.cs">
+      <DependentUpon>Uyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\YeniCalisanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\YeniCalisanEkle.Designer.cs">
+      <DependentUpon>YeniCalisanEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\YeniSporcuEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\YeniSporcuEkle.Designer.cs">
+      <DependentUpon>YeniSporcuEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\YeniUyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\YeniUyeEkle.Designer.cs">
+      <DependentUpon>YeniUyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\YillikUrunSatisGrafigi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme\YillikUrunSatisGrafigi.Designer.cs">
+      <DependentUpon>YillikUrunSatisGrafigi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="LoginUI\KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI\KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI\KullaniciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI\KullaniciKayit.Designer.cs">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI\SifreGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI\SifreGuncelle.Designer.cs">
+      <DependentUpon>SifreGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUI\Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUI\Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\AnasayfaGuncelDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\AnasayfaGuncelDurum.Designer.cs">
+      <DependentUpon>AnasayfaGuncelDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\Ayarlar.Designer.cs">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\CalisanlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\CalisanlarForm.Designer.cs">
+      <DependentUpon>CalisanlarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\GelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\GelirGider.Designer.cs">
+      <DependentUpon>GelirGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\GelirGierEkleYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\GelirGierEkleYeni.Designer.cs">
+      <DependentUpon>GelirGierEkleYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\Raporlar.Designer.cs">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\Sporcular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\Sporcular.Designer.cs">
+      <DependentUpon>Sporcular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\Urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\Urunler.Designer.cs">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\Uyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\Uyeler.Designer.cs">
+      <DependentUpon>Uyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\YeniCalisanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\YeniCalisanEkle.Designer.cs">
+      <DependentUpon>YeniCalisanEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\YeniSporcuEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\YeniSporcuEkle.Designer.cs">
+      <DependentUpon>YeniSporcuEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\YeniUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\YeniUrunEkle.Designer.cs">
+      <DependentUpon>YeniUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUI\YeniUyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUI\YeniUyeEkle.Designer.cs">
+      <DependentUpon>YeniUyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Deneme\AccountSettings.resx">
+      <DependentUpon>AccountSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\Calisanlar.resx">
+      <DependentUpon>Calisanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\FinansUI.resx">
+      <DependentUpon>FinansUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\Calisanİslemleri.resx">
+      <DependentUpon>Calisanİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\FinansUIEkle.resx">
+      <DependentUpon>FinansUIEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\raporDeneme.resx">
+      <DependentUpon>raporDeneme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\RaporMaas.resx">
+      <DependentUpon>RaporMaas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\RaporTest.resx">
+      <DependentUpon>RaporTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\UrunEkleUI.resx">
+      <DependentUpon>UrunEkleUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\UrunUI.resx">
+      <DependentUpon>UrunUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\Uyeler.resx">
+      <DependentUpon>Uyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\YeniCalisanEkle.resx">
+      <DependentUpon>YeniCalisanEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\YeniSporcuEkle.resx">
+      <DependentUpon>YeniSporcuEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\YeniUyeEkle.resx">
+      <DependentUpon>YeniUyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme\YillikUrunSatisGrafigi.resx">
+      <DependentUpon>YillikUrunSatisGrafigi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI\KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI\KullaniciKayit.resx">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI\SifreGuncelle.resx">
+      <DependentUpon>SifreGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUI\Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\AnasayfaGuncelDurum.resx">
+      <DependentUpon>AnasayfaGuncelDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\Ayarlar.resx">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\CalisanlarForm.resx">
+      <DependentUpon>CalisanlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\GelirGider.resx">
+      <DependentUpon>GelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\GelirGierEkleYeni.resx">
+      <DependentUpon>GelirGierEkleYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\Raporlar.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\Sporcular.resx">
+      <DependentUpon>Sporcular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\Urunler.resx">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\Uyeler.resx">
+      <DependentUpon>Uyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\YeniCalisanEkle.resx">
+      <DependentUpon>YeniCalisanEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\YeniSporcuEkle.resx">
+      <DependentUpon>YeniSporcuEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\YeniUrunEkle.resx">
+      <DependentUpon>YeniUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUI\YeniUyeEkle.resx">
+      <DependentUpon>YeniUyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRMSporKulubu.BLL\CRMSporKulubu.BLL.csproj">
+      <Project>{e020788d-21ec-4fb0-a506-6a0acaf7c640}</Project>
+      <Name>CRMSporKulubu.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRMSporKulubu.DAL\CRMSporKulubu.DAL.csproj">
+      <Project>{a88c88ff-c064-4b30-94f9-b6d205968b69}</Project>
+      <Name>CRMSporKulubu.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRMSporKulubu.Entities\CRMSporKulubu.Entities.csproj">
+      <Project>{e66e40ad-02c5-4626-a7ba-4257820dec0c}</Project>
+      <Name>CRMSporKulubu.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

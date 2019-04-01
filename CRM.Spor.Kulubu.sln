@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMSporKulubu.Entities", "CRMSporKulubu.Entities\CRMSporKulubu.Entities.csproj", "{E66E40AD-02C5-4626-A7BA-4257820DEC0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMSporKulubu.DAL", "CRMSporKulubu.DAL\CRMSporKulubu.DAL.csproj", "{A88C88FF-C064-4B30-94F9-B6D205968B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMSporKulubu.BLL", "CRMSporKulubu.BLL\CRMSporKulubu.BLL.csproj", "{E020788D-21EC-4FB0-A506-6A0ACAF7C640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMSporKulubu.WinUI", "CRMSporKulubu.WinUI\CRMSporKulubu.WinUI.csproj", "{58AEA15F-043F-4A57-AFEF-C66E08C2E06F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E66E40AD-02C5-4626-A7BA-4257820DEC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66E40AD-02C5-4626-A7BA-4257820DEC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66E40AD-02C5-4626-A7BA-4257820DEC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66E40AD-02C5-4626-A7BA-4257820DEC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88C88FF-C064-4B30-94F9-B6D205968B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88C88FF-C064-4B30-94F9-B6D205968B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88C88FF-C064-4B30-94F9-B6D205968B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88C88FF-C064-4B30-94F9-B6D205968B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E020788D-21EC-4FB0-A506-6A0ACAF7C640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E020788D-21EC-4FB0-A506-6A0ACAF7C640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E020788D-21EC-4FB0-A506-6A0ACAF7C640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E020788D-21EC-4FB0-A506-6A0ACAF7C640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AEA15F-043F-4A57-AFEF-C66E08C2E06F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AEA15F-043F-4A57-AFEF-C66E08C2E06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AEA15F-043F-4A57-AFEF-C66E08C2E06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AEA15F-043F-4A57-AFEF-C66E08C2E06F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57D7839D-E07F-492A-99F9-52337A4675FD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/hkubrademirkir
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CRMSporKulubu.Entities\\CRMSporKulubu.Entities.csproj
+		SccProjectName1 = CRMSporKulubu.Entities
+		SccLocalPath1 = CRMSporKulubu.Entities
+		SccProjectUniqueName2 = CRMSporKulubu.DAL\\CRMSporKulubu.DAL.csproj
+		SccProjectName2 = CRMSporKulubu.DAL
+		SccLocalPath2 = CRMSporKulubu.DAL
+		SccProjectUniqueName3 = CRMSporKulubu.BLL\\CRMSporKulubu.BLL.csproj
+		SccProjectName3 = CRMSporKulubu.BLL
+		SccLocalPath3 = CRMSporKulubu.BLL
+		SccProjectUniqueName4 = CRMSporKulubu.WinUI\\CRMSporKulubu.WinUI.csproj
+		SccProjectName4 = CRMSporKulubu.WinUI
+		SccLocalPath4 = CRMSporKulubu.WinUI
+	EndGlobalSection
+EndGlobal
